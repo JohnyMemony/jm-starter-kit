@@ -1,0 +1,6 @@
+.header {
+  width: 110px;
+  height: rem(200);
+  @include textStyle(20);
+  background-color: goldenrod;
+}

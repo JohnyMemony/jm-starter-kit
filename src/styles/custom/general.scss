@@ -1,0 +1,74 @@
+//Removing default properties==========================================================================================>
+p,div,h1,h2,h3,h4,h5,h6,ul,ol,a,li,form, input, button, fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+//Hide spin-buttons for input(number)
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+*, *:focus {
+  outline: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+//Main blocks==========================================================================================================>
+html {
+  font-size: 10px;
+}
+
+body {
+  position: relative;
+  font-size: inherit;
+  min-width: 320px;
+  box-sizing: border-box;
+  font-family: $main-font;
+  -webkit-font-smoothing: antialiased;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  max-width: 1500px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+//Main text blocks=====================================================================================================>
+h1 {
+  @include textStyle(48px, 600, #ffffff);
+  line-height: 48px;
+}
+
+p {
+  @include textStyle(24px, 400, #ffffff);
+  line-height: 28px;
+}
+
+//Classes =============================================================================================================>
+.hidden {
+  display: none;
+}
